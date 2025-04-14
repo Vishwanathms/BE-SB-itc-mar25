@@ -1,5 +1,6 @@
 version: 0.2
 
+
 env:
   variables:
     ECR_REPO_NAME: "be-sb-app"
@@ -8,6 +9,9 @@ env:
     CONTAINER_NAME: "be-sb-01"
 
 phases:
+  install:
+    runtime-versions:
+      java: corretto17
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
