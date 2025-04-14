@@ -12,7 +12,6 @@ phases:
   install:
     runtime-versions:
       java: corretto17
-      docker: 20
     commands:
       - echo Installing Buildx...
       - mkdir -p ~/.docker/cli-plugins
